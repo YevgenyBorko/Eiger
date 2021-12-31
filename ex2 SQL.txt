@@ -1,0 +1,4 @@
+SELECT department.NAME, COUNT(employee.ID)
+from employee RIGHT JOIN department on department.ID = employee.DEPT_ID
+GROUP BY(department.NAME) 
+ORDER BY COUNT(employee.ID) DESC
